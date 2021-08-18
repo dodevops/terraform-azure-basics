@@ -19,7 +19,7 @@ variable "lock" {
   default     = true
 }
 
-variable "proximiy_placement_group" {
+variable "manage_proximity_placement_group" {
   type        = bool
   description = "Manage a proximity placement group for the resource group"
   default     = true

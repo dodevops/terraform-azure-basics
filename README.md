@@ -76,7 +76,7 @@ Type: `bool`
 
 Default: `true`
 
-### proximiy\_placement\_group
+### manage\_proximity\_placement\_group
 
 Description: Manage a proximity placement group for the resource group
 
