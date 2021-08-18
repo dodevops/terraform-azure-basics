@@ -14,6 +14,7 @@ resource "azurerm_management_lock" "resource-group-level" {
 }
 
 resource "azurerm_proximity_placement_group" "ppg" {
+  count               = var.proximiy_placement_group ? 1 : 0
   location            = var.location
   name                = "${lower(var.project)}${lower(var.stage)}ppg"
   resource_group_name = azurerm_resource_group.azure-resource-group.name

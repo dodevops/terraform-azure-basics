@@ -76,6 +76,14 @@ Type: `bool`
 
 Default: `true`
 
+### proximiy\_placement\_group
+
+Description: Manage a proximity placement group for the resource group
+
+Type: `bool`
+
+Default: `true`
+
 ## Outputs
 
 The following outputs are exported:
