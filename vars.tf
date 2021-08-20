@@ -18,3 +18,9 @@ variable "lock" {
   description = "Lock ressource group for deletion"
   default     = true
 }
+
+variable "manage_proximity_placement_group" {
+  type        = bool
+  description = "Manage a proximity placement group for the resource group"
+  default     = true
+}
