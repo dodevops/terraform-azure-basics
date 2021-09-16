@@ -10,5 +10,5 @@ output "location" {
 
 output "ppg_id" {
   description = "The ID of the generated proximity placement group"
-  value       = azurerm_proximity_placement_group.ppg.id
+  value       = var.manage_proximity_placement_group ? azurerm_proximity_placement_group.ppg[0].id : ""
 }
