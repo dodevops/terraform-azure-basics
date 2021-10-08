@@ -10,7 +10,6 @@ resource "azurerm_management_lock" "resource-group-level" {
   scope      = azurerm_resource_group.azure-resource-group.id
   lock_level = "CanNotDelete"
   notes      = "Prevent the accidental deletion of resources"
-  tags       = var.tags
 }
 
 resource "azurerm_proximity_placement_group" "ppg" {
