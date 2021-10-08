@@ -13,6 +13,12 @@ variable "stage" {
   description = "Stage for this ressource group"
 }
 
+variable "tags" {
+  type        = map(any)
+  description = "Map of tags for the resources"
+  default     = {}
+}
+
 variable "lock" {
   type        = bool
   description = "Lock ressource group for deletion"

@@ -1,6 +1,7 @@
 resource "azurerm_resource_group" "azure-resource-group" {
   name     = "${lower(var.project)}${lower(var.stage)}resourcegroup"
   location = var.location
+  tags     = var.tags
 }
 
 resource "azurerm_management_lock" "resource-group-level" {
@@ -9,6 +10,7 @@ resource "azurerm_management_lock" "resource-group-level" {
   scope      = azurerm_resource_group.azure-resource-group.id
   lock_level = "CanNotDelete"
   notes      = "Prevent the accidental deletion of resources"
+  tags       = var.tags
 }
 
 resource "azurerm_proximity_placement_group" "ppg" {
@@ -16,4 +18,5 @@ resource "azurerm_proximity_placement_group" "ppg" {
   location            = var.location
   name                = "${lower(var.project)}${lower(var.stage)}ppg"
   resource_group_name = azurerm_resource_group.azure-resource-group.name
+  tags                = var.tags
 }
