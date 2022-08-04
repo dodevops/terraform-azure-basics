@@ -100,6 +100,10 @@ The following outputs are exported:
 
 Description: The location input variable (can be used for dependency resolution)
 
+### lock\_id
+
+Description: The ID of the managed resource group lock
+
 ### ppg\_id
 
 Description: The ID of the generated proximity placement group
