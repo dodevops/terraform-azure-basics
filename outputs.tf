@@ -3,6 +3,11 @@ output "resource_group" {
   value       = azurerm_resource_group.azure-resource-group.name
 }
 
+output "resource_group_id" {
+  description = "The ID of the generated resource group"
+  value       = azurerm_resource_group.azure-resource-group.id
+}
+
 output "location" {
   description = "The location input variable (can be used for dependency resolution)"
   value       = var.location
