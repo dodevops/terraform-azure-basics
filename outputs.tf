@@ -15,5 +15,5 @@ output "ppg_id" {
 
 output "lock_id" {
   description = "The ID of the managed resource group lock"
-  value       = var.lock ? azurerm_management_lock.resource-group-level.0.id : ""
+  value       = var.lock ? azurerm_management_lock.resource-group-level[0].id : ""
 }
