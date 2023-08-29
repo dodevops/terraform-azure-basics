@@ -115,6 +115,10 @@ Description: The ID of the generated proximity placement group
 ### resource\_group
 
 Description: The name of the generated resource group
+
+### resource\_group\_id
+
+Description: The ID of the generated resource group
 <!-- END_TF_DOCS -->
 
 ## Development
